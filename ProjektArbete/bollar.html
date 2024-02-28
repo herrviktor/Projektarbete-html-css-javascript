@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="En webbshop som säljer tennisprodukter" />
+		<meta name="keywords" content="Tennis, Tennisracket, Tennisskor, 
+		Tenniskläder, Tennisbollar, Tennisväskor, Tennisgrejer, Tennisrsenor, 
+		Grepplindor, Vibrationsdämpare" />
+		<meta name="author" content="Viktor Ekström" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tennisgrejer</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="grid-container">
+			<header id="header"><!--knappar-->
+				<div id="free-delivery">Fri frakt vid köp över 400 kr</div>
+                <h1>
+					<svg class="logo logo-big" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke="none"/> 
+						<circle cx="12" cy="12" r="9"/> 
+						<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+						<path d="M18 5.3a9 9 0 0 0 0 13.4" /> 
+						<text class="logo-text" x="3.9" y="14">T</text>
+						<text class="logo-text" x="15.8" y="14">G</text>
+						<svg class="logo-mini" width="6" height="6" x="9" y="3" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> 
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" />
+						</svg>
+						<svg class="logo-mini" width="6" height="6" x="9" y="13.9" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> 
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" />
+						</svg>
+					</svg>
+				  	<span id="header-title">TennisGrejer</span>
+				</h1>
+                <nav id="top-nav">
+					<a class="link top-link" href="C:/Users/herrv/Documents/Projektarbete/index.html" target="_self">Hem</a>
+					<div class="burger-meny" onclick="toggleDropdown('drop-down1', event)">
+						<span class="burger-text">Shoppa</span>
+						<span class="burger-icon">&#9776</span>
+						<div id="drop-down1" class="drop-content">
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self">Tennisracketar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self">Tennisskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self">Tennisbollar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self">Tennisväskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self">Tenniskläder</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self">Övrigt</a>
+						</div>
+					</div>
+					<a href="C:/Users/herrv/Documents/Projektarbete/kassa.html" target="_self" class="checkout">Kassa<span class="cart">
+						&#x1F6D2;<svg class="logo-mini svg-cart" viewbox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="10" cy="10" r="9"/><text class="logo-text2" x="6" y="15" style="font-size: 15px">0</text></svg></span></a>
+                </nav>
+			</header>
+			<aside id="aside">
+                <nav id="aside-nav">
+					<a href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self" class="link left-link">Tennisracketar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self" class="link left-link">Tennisskor</a>	
+					<a href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self" class="link left-link">Tennisbollar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self" class="link left-link">Tennisväskor</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self" class="link left-link">Tenniskläder</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self" class="link left-link">Övrigt</a>
+                </nav>
+            </aside>
+            <main id="main">
+				<section class="product">
+					<img src="bilder/bollar/bollar1.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Babolat AllCourt</h4>
+					<p class="product-description">
+						Denna tennisboll är en variant av Roland Garros-bollen 
+                        som användes i French Open med skillnaden 
+                        att denna är gjord för alla underlag.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 99kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/bollar/bollar2.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Dunlop ATP</h4>
+					<p class="product-description">
+						Denna tennisboll är officiell boll på ATP-touren 
+                        och är av absolut högsta kvalitet. Bollen är 
+                        tillverkad med HD Pro filter för maximal hållbarhet.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 79kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar3.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Tretorn Serie Tour</h4>
+					<p class="product-description">
+						Serie + Tour är en ny boll från Tretorn som har 
+                        en snabb hastighet vilket gör att den passar 
+                        duktiga spelare som kan hantera ett snabbt spel.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 119kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar4.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Babolat Team</h4>
+					<p class="product-description">
+						En utav Babolats absolut finaste och lite tyngre 
+                        allcourt tennisbollar. Riktigt populär bland 
+                        tennisklubbarna runt om i Sverige och perfekt 
+                        för både träning och tävling.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 99kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar5.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Head Championship</h4>
+					<p class="product-description">
+						Kvalitétsboll från Head för vardagligt spel 
+                        Head Championship är en lättspelad boll med 
+                        lång hållbarhet för klubb- och nybörjarspelare.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 89kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar6.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Head Pro</h4>
+					<p class="product-description">
+						Njut av timmarna i tennishallen med Head Pro - 
+                        Ett toppval för seriösa klubbspelare. Med 
+                        Encore™-teknologi för längre hållbarhet och 
+                        SmartOptik™-filt för förbättrad synlighet av bollen<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 99kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar7.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Wilson Roland Garros</h4>
+					<p class="product-description">
+						Denna tennisboll är en variant av
+                        Roland Garrosbollen som används i French Open
+                        med skillnaden att denna är gjord för alla underlag.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 109kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar9.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">RS All Court</h4>
+					<p class="product-description">
+						Denna tennisboll är aningen snabbare jämfört med 
+                        RS All Court Black Edition vilket gör att den 
+                        lämpar sig bättre för tävlingsspelare.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 119kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar10.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Tretorn Plus</h4>
+					<p class="product-description">
+						Tretorn Plus i en ny version av den populära trycklösa 
+                        tennisboll som inte påverkas av varken höjd eller 
+                        temperatur. Det stora pluset ligger i den långa 
+                        livslängden.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 99kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar11.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Babolat Stage 2</h4>
+					<p class="product-description">
+						Babolats Stage 2-boll är 50 % långsammare än en 
+                        vanlig tennisboll. Perfekt för juniorer 
+                        upp till 10 år.<br>
+						<span class="antal">Antal bollar: 36</span><br>
+						<span class="product-price">Pris: 359kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar8.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Babolat Red Foam</h4>
+					<p class="product-description">
+						Mjukbollar från Babolat. Levereras i en plasthink<br>
+						<span class="antal">Antal bollar: 24</span><br>
+						<span class="product-price">Pris: 279kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/bollar/bollar12.jpg" alt="Tennisbollar" class="product-img">
+					<h4 class="product-title">Babolat Red Felt</h4>
+					<p class="product-description">
+						Den här bollen är större och 75% långsammare 
+                        än en vanlig tennisboll. Passar perfekt 
+                        för vuxna nybörjare och barn.<br>
+						<span class="antal">Antal bollar: 4</span><br>
+						<span class="product-price">Pris: 69kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+            </main>
+			<footer id="footer">
+				<address class="contact">Address: Tennisvägen 1</address>
+				<address class="contact">Telefon: 08-075 007 84</address>
+				<address class="contact">Epost: info@tennisgrejer.com</address>
+            </footer>
+		</div>
+		<script src="skript.js"></script>
+	</body>
+</html>
+<!---->

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="En webbshop som säljer tennisprodukter" />
+		<meta name="keywords" content="Tennis, Tennisracket, Tennisskor, 
+		Tenniskläder, Tennisbollar, Tennisväskor, Tennisgrejer, Tennisrsenor, 
+		Grepplindor, Vibrationsdämpare" />
+		<meta name="author" content="Viktor Ekström" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tennisgrejer</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="grid-container">
+			<header id="header"><!--knappar-->
+				<div id="free-delivery">Fri frakt vid köp över 400 kr</div>
+                <h1>
+					<svg class="logo logo-big" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke="none"/> 
+						<circle cx="12" cy="12" r="9"/> 
+						<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+						<path d="M18 5.3a9 9 0 0 0 0 13.4" /> 
+						<text class="logo-text" x="3.9" y="14">T</text>
+						<text class="logo-text" x="15.8" y="14">G</text>
+						<svg class="logo-mini" width="6" height="6" x="9" y="3" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> 
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" />
+						</svg>
+						<svg class="logo-mini" width="6" height="6" x="9" y="13.9" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> 
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" />
+						</svg>
+					</svg>
+				  	<span id="header-title">TennisGrejer</span>
+				</h1>
+                <nav id="top-nav">
+					<a class="link top-link" href="C:/Users/herrv/Documents/Projektarbete/index.html" target="_self">Hem</a>
+					<div class="burger-meny" onclick="toggleDropdown('drop-down1', event)">
+						<span class="burger-text">Shoppa</span>
+						<span class="burger-icon">&#9776</span>
+						<div id="drop-down1" class="drop-content">
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self">Tennisracketar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self">Tennisskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self">Tennisbollar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self">Tennisväskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self">Tenniskläder</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self">Övrigt</a>
+						</div>
+					</div>
+					<a href="C:/Users/herrv/Documents/Projektarbete/kassa.html" target="_self" class="checkout">Kassa<span class="cart">
+						&#x1F6D2;<svg class="logo-mini svg-cart" viewbox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="10" cy="10" r="9"/><text class="logo-text2" x="6" y="15" style="font-size: 15px">0</text></svg></span></a>
+                </nav>
+			</header>
+			<aside id="aside">
+                <nav id="aside-nav">
+					<a href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self" class="link left-link">Tennisracketar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self" class="link left-link">Tennisskor</a>	
+					<a href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self" class="link left-link">Tennisbollar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self" class="link left-link">Tennisväskor</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self" class="link left-link">Tenniskläder</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self" class="link left-link">Övrigt</a>
+                </nav>
+            </aside>
+            <main id="main">
+				<section class="product">
+					<img src="bilder/ovrigt/sena1.jpg" alt="Tennissena" class="product-img">
+					<h4 class="product-title">Babolat RPM Blast</h4>
+					<p class="product-description">
+						Produkt: Sena<br>
+                        Typ: Polyester<br>
+                        Tjocklek: 1.30mm<br>
+                        Längd: 12m<br>
+						<span class="product-price">Pris: 169kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/sena2.jpg" alt="Tennissena" class="product-img">
+					<h4 class="product-title">Solinco Tour Bite</h4>
+					<p class="product-description">
+                        Produkt: Sena<br>
+						Typ: polyester<br>
+                        Tjocklek: 1.20mm<br>
+                        Längd: 12m<br>
+						<span class="product-price">Pris: 149kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/ovrigt/sena3.jpg" alt="Tennissena" class="product-img">
+					<h4 class="product-title">Wilson Champions</h4>
+					<p class="product-description">
+                        Produkt: Sena<br>
+						Typ: Hybrid<br>
+                        Tjocklek: 1.30mm<br>
+                        Längd: 12m<br>
+						<span class="product-price">Pris: 299kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/ovrigt/senor1.jpg" alt="Tennissena" class="product-img">
+					<h4 class="product-title">Luxilon Smart</h4>
+					<p class="product-description">
+                        Produkt: Sena<br>
+						Typ: Monofilament<br>
+                        Tjocklek: 1.25mm<br>
+                        Längd: 200m<br>
+						<span class="product-price">Pris: 1499kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/ovrigt/senor2.jpg" alt="Tennissena" class="product-img">
+					<h4 class="product-title">Solinco Tour Soft</h4>
+					<p class="product-description">
+                        Produkt: Sena<br>
+						Typ: Multifilament<br>
+                        Tjocklek: 1.30mm<br>
+                        Längd: 200m<br>
+						<span class="product-price">Pris: 1999kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/lindor3.jpg" alt="Grepplinda" class="product-img">
+					<h4 class="product-title">Wilson Camo</h4>
+					<p class="product-description">
+                        Produkt: Grepplinda<br>
+						Typ: Overgrip<br>
+						Egenskap: Torr<br>
+                        Tjocklek: 0.6mm<br>
+						<span class="product-price">Pris: 69kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/lindor2.jpg" alt="Grepplinda" class="product-img">
+					<h4 class="product-title">Head Xtreme Soft</h4>
+					<p class="product-description">
+                        Produkt: Grepplinda<br>
+						Typ: Overgrip<br>
+						Egenskap: Klibbig<br>
+                        Tjocklek: 0.5mm<br>
+						<span class="product-price">Pris: 89kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/lindor1.jpg" alt="Grepplinda" class="product-img">
+					<h4 class="product-title">Pacific X-Tack Pro</h4>
+					<p class="product-description">
+                        Produkt: Grepplinda<br>
+						Typ: Overgrip<br>
+						Egenskap: Klibbig<br>
+                        Tjocklek: 0.55mm<br>
+						<span class="product-price">Pris: 69kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/linda1.jpg" alt="Grepplinda" class="product-img">
+					<h4 class="product-title">Babolat Natural Leather</h4>
+					<p class="product-description">
+                        Produkt: Grepplinda<br>
+						Typ: Replacement<br>
+						Egenskap: Torr<br>
+                        Tjocklek: 1.7mm<br>
+						<span class="product-price">Pris: 149kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/linda2.jpg" alt="Grepplinda" class="product-img">
+					<h4 class="product-title">Wilson Sublime Grip</h4>
+					<p class="product-description">
+                        Produkt: Grepplinda<br>
+						Typ: Replacement<br>
+						Egenskap: Torr<br>
+                        Tjocklek: 1.9mm<br>
+						<span class="product-price">Pris: 99kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/damper1.jpg" alt="Vibrationsdämpare" class="product-img">
+					<h4 class="product-title">Wilson Pro Feel</h4>
+					<span class="antal">Vibrationsdämpare</span><br>
+					<p class="product-description">
+						Placeras mellan senorna för att minska vibrationerna ut 
+						till tennisrackets skaft och din hand.<br>
+						<span class="product-price">Pris: 79kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/ovrigt/damper2.jpg" alt="Vibrationsdämpare" class="product-img">
+					<h4 class="product-title">Babolat Custom Damp</h4>
+					<span class="antal">Vibrationsdämpare</span><br>
+					<p class="product-description">
+						vibrationsdämparen kommer göra att slå bollen blir den 
+						mest bekväma upplevelsen.<br>
+						<span class="product-price">Pris: 89kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+            </main>
+			<footer id="footer">
+				<address class="contact">Address: Tennisvägen 1</address>
+				<address class="contact">Telefon: 08-075 007 84</address>
+				<address class="contact">Epost: info@tennisgrejer.com</address>
+            </footer>
+		</div>
+		<script src="skript.js"></script>
+	</body>
+</html>
