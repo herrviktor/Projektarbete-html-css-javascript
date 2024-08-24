@@ -1,0 +1,244 @@
+<!DOCTYPE html> <!-- Deklarerar dokumenttypen för HTML -->
+<html lang="sv"> <!-- Deklarerar HTML-dokumentet med språkangivelse för svenska -->
+    <head> <!-- Huvuddelen av dokumentet som innehåller metadata och länkar till externa filer -->
+        <meta charset="UTF-8" /> <!-- Teckenuppsättning för dokumentet -->
+        <meta name="description" content="En shop av tennisgrejer" /> <!-- Beskrivning av webbplatsen -->
+        <meta name="keywords" content="Tennis, Tennisracket, Tennisskor, Tenniskläder, Tennisbollar, Tennisväskor" /> <!-- Nyckelord för sökmotoroptimering -->
+        <meta name="author" content="Viktor Ekström" /> <!-- Författare till webbplatsen -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Anpassning av webbsidan för olika enheter -->
+        <title>Tennisgrejer</title> <!-- Titel på webbsidan som visas i webbläsarfönstret -->
+        <link rel="stylesheet" href="style.css"> <!-- Länk till extern CSS-fil för att styla webbsidan -->
+        <style> /* Inbäddad CSS-stilmall som endast gäller för denna specifika sida */
+			/* Definierar en ny keyframe-animation som byter fär och blinkar */
+			@keyframes colorChange {
+				0% { background-color: var(--cRed); } /* Vid 0% av animationen, ändra bakgrundsfärgen till röd */
+				50% { background-color: var(--cBlue); } /* Vid 50% av animationen, ändra bakgrundsfärgen till blå */
+				75% { color: var(--cWhite); } /* påbörjar blinkning av texten */
+				77% { color: var(--cBlack); }
+				79% { color: var(--cWhite); }
+				81% { color: var(--cBlack); }
+				83% { color: var(--cWhite); }
+				85% { color: var(--cBlack); }
+				87% { color: var(--cWhite); }
+				89% { color: var(--cBlack); }
+				91% { color: var(--cWhite); }
+				93% { color: var(--cBlack); }
+				95% { color: var(--cWhite); }
+				97% { color: var(--cBlack); } /* Avslutar blinkning av texten */
+				100% { 
+					background-color: var(--cRed); /* Vid 100% av animationen, ändra bakgrundsfärgen till orginalfärg */
+					color: var(--cWhite); /* återgår till orginalfärg efter blinkning */
+				}
+			}
+
+			/* Stilar för reklambannern #sale-banner */
+			section#sale-banner {
+				display: flex; /* Använd flexbox för layout */
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-evenly; /* Jämnt fördela utrymmet mellan elementen */
+				width: 100%;
+				height: 150px;
+				background-color: var(--cRed);
+				color: var(--cWhite);
+				margin-bottom: 30px;
+				animation: colorChange 4s 3; /* Applicera keyframe-animationen colorChange */
+			}
+
+			input.checkbox {
+				visibility: hidden;
+			}
+
+			/* Stilar för sektion med id "index-product-s" */
+			section#index-product-s {
+				flex: 1 0 33.3%; /* Använd flexbox med en tredjedel av tillgängligt utrymme */
+				display: flex;
+				flex-wrap: wrap; /* Tillåt produkterna att byta rad vid behov */
+				width: 100%; /* Sektionen ska ta upp hela bredden av sin container */
+			}
+
+			/* Stilar för sektion med klassen "index-product" */
+			section.index-product {
+				display: flex;
+				flex-direction: column; /* produktdelarna placeras vertikalt */
+				align-items: center; /* Centrera produktdelarna horisontellt */
+				justify-content: space-around; /* Jämnt fördela utrymmet runt produktdelarna */
+				width: 33.3%; /* 3 produkter i bredd */
+				padding: 0 15px 70px 10px; /* mellanrum mellan ram och produktdelarna */
+				margin: 5px 0 50px 0; /* melanrum mellan produkterna */
+			}
+
+			/* när anvandaren rör musen över produkten */
+			section.index-product:hover {
+				outline: 5px solid var(--cRed); /* en lagom fet röd ram framkommer */
+			}
+
+			sup.rea {
+				display: inline-block;
+				transform: translate(-9px, -6px) rotate(20deg)
+			}
+
+			/* Media query för surfplattor */
+			@media screen and (max-width: 650px) {
+				section.index-product {
+					width: 50%; /* bara 2 produkter i bredd */
+				}
+			}
+
+			/* Media query för mobilskärmar */
+			@media screen and (max-width: 450px) {
+				section.index-product {
+					width: 100%; /* bara 1 produkt i bredd */
+				}
+			}
+	</style>
+	</head>
+	<body>
+		<div id="grid-container"> <!-- En wrapper-container för hela hemsidan -->
+			<header id="header"> 
+				<div id="free-delivery">Fri frakt vid köp över 400 kr</div>
+				<h1>
+					<svg class="logo logo-big" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<!-- logotyp för varumärket som sträcker sig inom kordinaterna x0-24 och y0-24 -->
+						<path stroke="none"/> 
+						<circle cx="12" cy="12" r="9"/> <!-- cirkel för logotypen -->
+						<path d="M6 5.3a9 9 0 0 1 0 13.4" /> <!-- vänsterbåge för logotypen -->
+						<path d="M18 5.3a9 9 0 0 0 0 13.4" /> <!-- högerbåge för logotypen -->
+						<text class="logo-text" x="3.9" y="14">T</text> <!-- bokstav T inom logotypen -->
+						<text class="logo-text" x="15.8" y="14">G</text> <!-- bokstav G inom logotypen -->
+						<svg class="logo-mini" width="6" height="6" x="9" y="3" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<!-- mindre version av logotypen för användning i den stora logotypen -->
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> <!-- cirkel för mindre logotypen -->
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> <!-- vänsterbåge för mindre logotypen -->
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" /> <!-- högerbåge för mindre logotypen -->
+						</svg>
+						<svg class="logo-mini" width="6" height="6" x="9" y="13.9" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<!-- mindre version av logotypen för användning i den stora logotypen -->
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> <!-- cirkel för mindre logotypen -->
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> <!-- vänsterbåge för mindre logotypen -->
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" /> <!-- högerbåge för mindre logotypen -->
+						</svg>
+					</svg>
+					<span id="header-title">TennisGrejer</span> <!-- Texten för varumärket -->
+				</h1>
+                <nav id="top-nav"> <!-- En navcontainer med länkar och knappar -->
+					<a class="link top-link" href="C:/Users/herrv/Documents/Projektarbete/index.html" target="_self">Hem</a> <!-- Länk till startsidan -->
+					<div class="burger-meny" onclick="toggleDropdown('drop-down1')"> <!-- en container som hämtar en funktion för en drop-down meny -->
+						<span class="burger-text">Shoppa</span> <!-- Text för att visa att det är en dropdown för shopping -->
+						<span class="burger-icon">&#9776</span> <!-- Hamburger-ikonen för att indikera att det är en dropdown -->
+						<div id="drop-down1" class="drop-content"> <!-- Dropdown-innehåll för shoppingmenyn med länkar till det olika sidorna som öppnas i samma flik -->
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self">Tennisracketar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self">Tennisskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self">Tennisbollar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self">Tennisväskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self">Tenniskläder</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self">Övrigt</a>
+						</div>
+					</div>
+					<!-- Nedan en kassa länk med text, ikon och en svg som visar antalet köp -->
+					<a href="C:/Users/herrv/Documents/Projektarbete/kassa.html" target="_self" class="checkout">Kassa<span class="cart">&#x1F6D2;<svg class="logo-mini svg-cart" viewbox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="10" cy="10" r="9"/><text class="logo-text2" x="6" y="15" style="font-size: 15px">0</text></svg></span></a> <!-- Länk till kassasidan med en kundvagnsikon och antal varor -->
+				</nav>
+			</header>
+			<aside id="aside">
+				<nav id="aside-nav"> <!-- En sido navcontainer med länkar till det olika sidorna -->
+					<a href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self" class="link left-link trigger-link"><input type="checkbox" class="checkbox">Shoppa Loss</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self" class="link left-link hidden-link">Tennisracketar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self" class="link left-link hidden-link">Tennisskor</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self" class="link left-link hidden-link">Tennisbollar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self" class="link left-link hidden-link">Tennisväskor</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self" class="link left-link hidden-link">Tenniskläder</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self" class="link left-link hidden-link">Övrigt</a>
+				</nav>
+			</aside>
+			<main id="index" class="index-grid">
+				<section id="sale-banner" class="sale-banner"> <!-- Reklambanner för att dra användaren neråt på sidan -->
+					<h2>Vinter-REA</h2>
+					<h3>Skynda att fynda på utvalda produkter</h3>
+					<span>&#8595;</span> <!-- Pil-ikon för att visa nedåtriktad scrollning -->
+				</section>
+				<section id="index-product-s">
+					<section class="index-product"> <!-- en container med produkten och dess element som skiljs åt för unik styling -->
+						<img src="bilder/racket/head_graphene_16x19_1499.jpg" alt="Tennisracket" class="product-img">
+						<h4 class="product-title">Head Graphene</h4> <!-- Produkttiteln -->
+						<p class="product-description">
+							Srängmönster: 16X19<br> <!-- En del av produktbeskrivningen som avslutas med ett radbyte -->
+							Träffyta: 98 sq.inch<br>
+							Vikt (Strängad): 305g<br>
+							Spelnivå: Motionär<br>
+							<span class="product-price">Pris: 1399kr<sup class="rea">Rea</sup></span>
+						</p>
+						<button class="product-button">Köp</button>
+					</section>
+					<section class="index-product">
+						<img src="bilder/vaskor/vaska4_12.jpg" alt="Tennisväska" class="product-img">
+						<h4 class="product-title">Babolat RH x12</h4>
+						<p class="product-description">
+							Tre stora fack ger plats för hela tennisutrustningen
+							och tre mindre fack håller ordning och reda i 
+							väskan. <br>
+							<span class="antal">Volym: 72L</span><br>
+							<span class="product-price">Pris: 1499kr</span>
+						</p>					
+						<button class="product-button">Köp</button>
+					</section>
+					<section class="index-product">
+						<img src="bilder/ovrigt/lindor3.jpg" alt="Grepplinda" class="product-img">
+						<h4 class="product-title">Wilson Camo</h4>
+						<p class="product-description">
+							Produkt: Grepplinda<br>
+							Typ: Overgrip<br>
+							Egenskap: Torr<br>
+							Tjocklek: 0.6mm<br>
+							<span class="product-price">Pris: 69kr</span>
+						</p>					
+						<button class="product-button">Köp</button>
+					</section>
+					<section class="index-product">
+						<img src="bilder/bollar/bollar2.jpg" alt="Tennisbollar" class="product-img">
+						<h4 class="product-title">Dunlop ATP</h4>
+						<p class="product-description">
+							Denna tennisboll är officiell boll på ATP-touren 
+							och är av absolut högsta kvalitet. Bollen är 
+							tillverkad med HD Pro filter för maximal hållbarhet.<br>
+							<span class="antal">Antal bollar: 4</span><br>
+							<span class="product-price">Pris: 79kr</span>
+						</p>					
+						<button class="product-button">Köp</button>
+					</section>
+					<section class="index-product">
+						<img src="bilder/skor/asics_herrClay1.jpg" alt="Tennisskor" class="product-img">
+						<h4 class="product-title">Asics Challenger</h4>
+						<p class="product-description">
+							Kategori: Herr<br>
+							Spelnivå: Motionär<br>
+							Underlag: Grus<br>
+							Vikt(str 44): 390g<br>
+							<span class="product-price">Pris: 899kr</span>
+						</p>
+						<button class="product-button">Köp</button>
+					</section>
+					<section class="index-product">
+						<img src="bilder/klader/linne2.jpg" alt="Klädesplagg" class="product-img">
+						<h4 class="product-title">FZ Forza Estate</h4>
+						<span class="gender">Dam</span>
+						<p class="product-description">
+							Snyggt och stilrent linne. Funktionsmaterialet gör 
+							att man känner sig rörlig under hela tennispasset.<br>
+							<span class="product-price">Pris: 499kr</span>
+						</p>					
+						<button class="product-button">Köp</button>
+					</section>
+				</section>
+            </main>
+			<footer id="footer"> <!-- en container med elemnt som visar hemsidans kontaktuppgifter -->
+				<address class="contact">Address: Tennisvägen 1</address>
+				<address class="contact">Telefon: 08-075 007 84</address>
+				<address class="contact">Epost: info@tennisgrejer.com</address>
+            </footer>
+		</div>
+		<script src="skript.js"></script> <!-- Laddar javascript-fil sist efter hemsidan för ökad snabbhet -->
+	</body>
+</html>

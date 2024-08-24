@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="En webbshop som säljer tennisprodukter" />
+		<meta name="keywords" content="Tennis, Tennisracket, Tennisskor, 
+		Tenniskläder, Tennisbollar, Tennisväskor, Tennisgrejer, Tennisrsenor, 
+		Grepplindor, Vibrationsdämpare" />
+		<meta name="author" content="Viktor Ekström" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tennisgrejer</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="grid-container">
+			<header id="header"><!--knappar-->
+				<div id="free-delivery">Fri frakt vid köp över 400 kr</div>
+                <h1>
+					<svg class="logo logo-big" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke="none"/> 
+						<circle cx="12" cy="12" r="9"/> 
+						<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+						<path d="M18 5.3a9 9 0 0 0 0 13.4" /> 
+						<text class="logo-text" x="3.9" y="14">T</text>
+						<text class="logo-text" x="15.8" y="14">G</text>
+						<svg class="logo-mini" width="6" height="6" x="9" y="3" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> 
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" />
+						</svg>
+						<svg class="logo-mini" width="6" height="6" x="9" y="13.9" stroke="white" fill="#770" viewBox="0 0 24 20">
+							<path stroke="none"/> 
+							<circle cx="12" cy="12" r="9" /> 
+							<path d="M6 5.3a9 9 0 0 1 0 13.4" /> 
+							<path d="M18 5.3a9 9 0 0 0 0 13.4" />
+						</svg>
+					</svg>
+				  	<span id="header-title">TennisGrejer</span>
+				</h1>
+                <nav id="top-nav">
+					<a class="link top-link" href="C:/Users/herrv/Documents/Projektarbete/index.html" target="_self">Hem</a>
+					<div class="burger-meny" onclick="toggleDropdown('drop-down1', event)">
+						<span class="burger-text">Shoppa</span>
+						<span class="burger-icon">&#9776</span>
+						<div id="drop-down1" class="drop-content">
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self">Tennisracketar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self">Tennisskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self">Tennisbollar</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self">Tennisväskor</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self">Tenniskläder</a>
+							<a class="drop-link" href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self">Övrigt</a>
+						</div>
+					</div>
+					<a href="C:/Users/herrv/Documents/Projektarbete/kassa.html" target="_self" class="checkout">Kassa<span class="cart">
+						&#x1F6D2;<svg class="logo-mini svg-cart" viewbox="0 0 24 28" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="10" cy="10" r="9"/><text class="logo-text2" x="6" y="15" style="font-size: 15px">0</text></svg></span></a>
+                </nav>
+			</header>
+			<aside id="aside">
+                <nav id="aside-nav">
+					<a href="C:/Users/herrv/Documents/Projektarbete/racket.html" target="_self" class="link left-link">Tennisracketar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/skor.html" target="_self" class="link left-link">Tennisskor</a>	
+					<a href="C:/Users/herrv/Documents/Projektarbete/bollar.html" target="_self" class="link left-link">Tennisbollar</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/vaskor.html" target="_self" class="link left-link">Tennisväskor</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/klader.html" target="_self" class="link left-link">Tenniskläder</a>
+					<a href="C:/Users/herrv/Documents/Projektarbete/ovrigt.html" target="_self" class="link left-link">Övrigt</a>
+                </nav>
+            </aside>
+            <main id="main">
+				<section class="product">
+					<img src="bilder/klader/polo2.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Adidas Melbourne</h4>
+                    <span class="gender">Herr</span>
+					<p class="product-description">
+						Pikétröjan har en smal passform och är tillverkad 
+                        av dubbelstickad polyester för högsta kvalitet.<br>
+						<span class="product-price">Pris: 499kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+				<section class="product">
+					<img src="bilder/klader/linne1.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Adidas Tank Night</h4>
+                    <span class="gender">Dam</span>
+					<p class="product-description">
+						Detta linne tar udden av matchens hetta med ventilerande 
+                        material och laserskurna perforeringar.<br>
+						<span class="product-price">Pris: 599kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/polo1.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Björn Borg Polo</h4>
+                    <span class="gender">Herr</span>
+					<p class="product-description">
+						Snygg och stilren piké från Björn Borg med funktionsmaterial.<br>
+						<span class="product-price">Pris: 349kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/linne2.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">FZ Forza Estate</h4>
+                    <span class="gender">Dam</span>
+					<p class="product-description">
+						Snyggt och stilrent linne. Funktionsmaterialet gör 
+                        att man känner sig rörlig under hela träningspasset.<br>
+						<span class="product-price">Pris: 499kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/tShirt1.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Björn Borg Tee</h4>
+                    <span class="gender">Herr</span>
+					<p class="product-description">
+						Björn Borg Training Tee är din ultimata träningspartner. 
+                        Denna funktionella tränings t-shirt har en normal passform<br>
+						<span class="product-price">Pris: 399kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/tShirtDam.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Adidas Club Polo</h4>
+                    <span class="gender">Dam</span>
+					<p class="product-description">
+						Denna polo från Adidas har en normal passform som 
+                        får dig att flyga fram på planen.<br>
+						<span class="product-price">Pris: 399kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/shorts2.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">EYE Competition</h4>
+                    <span class="gender">Herr</span>
+					<p class="product-description">
+						Optimal ventilation och en riktigt skön känsla erbjuder 
+                        dessa shorts för racketsport.<br>
+						<span class="product-price">Pris: 499kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/skirt1.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Adidas Pleated Skirt</h4>
+                    <span class="gender">Dam</span>
+					<p class="product-description">
+						Klubbstil med en modern twist. Den här adidas 
+						Club-kjolen har texturerat tyg i en rak siluett.<br>
+						<span class="product-price">Pris: 399kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/shorts6.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Adidas Club Woven</h4>
+                    <span class="gender">Herr</span>
+					<p class="product-description">
+						Dessa shorts är en oumbärlig del av adidas Club-kollektion, 
+                        som passar alla spelstilar med sin mjuka och lätta design.<br>
+						<span class="product-price">Pris: 499kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/skirt3.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Adidas Club Shorts</h4>
+                    <span class="gender">Dam</span>
+					<p class="product-description">
+						De här tennisshortsen är gjorda i lite glansigt, stickat 
+						material och har kontrasterande kantband.<br>
+						<span class="product-price">Pris: 299kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/shorts7.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Fila Shorts Santana</h4>
+                    <span class="gender">Herr</span>
+					<p class="product-description">
+						Dessa bekväma tennisshorts i funktionsmaterial hjälper 
+                        dig att röra dig fritt och snabbt på banan.<br>
+						<span class="product-price">Pris: 449kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+                <section class="product">
+					<img src="bilder/klader/skirt4.jpg" alt="Klädesplagg" class="product-img">
+					<h4 class="product-title">Babolat Play Skirt</h4>
+                    <span class="gender">Dam</span>
+					<p class="product-description">
+						Riktigt fin kjol för damer i stilren färgsättning. 
+						Funktionsmaterial som andas bra och sitter bekvämt.<br>
+						<span class="product-price">Pris: 349kr</span>
+					</p>					
+					<button class="product-button">Köp</button>
+				</section>
+            </main>
+			<footer id="footer">
+				<address class="contact">Address: Tennisvägen 1</address>
+				<address class="contact">Telefon: 08-075 007 84</address>
+				<address class="contact">Epost: info@tennisgrejer.com</address>
+            </footer>
+		</div>
+		<script src="skript.js"></script>
+	</body>
+</html>
