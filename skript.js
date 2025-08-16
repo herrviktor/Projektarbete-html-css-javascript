@@ -108,7 +108,7 @@ function validateAllInputs() { // Skapar  en funktion som validerar alla input e
 document.getElementById('checkout-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Förhindra standardformuläret
   if (validateAllInputs()) { // Om alla valideringar lyckades
-    window.location.href = 'C:/Users/herrv/Documents/Projektarbete/bestallning.html'; // Gå till beställningssidan
+    window.location.href = 'bestallning.html'; // Gå till beställningssidan
   }
 });
 
